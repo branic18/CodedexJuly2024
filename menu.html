@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta https-equiv="X-UA-Compatible" content="ie-edge"/>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+  body{
+    margin: 0;
+  }
+  canvas {
+    width: 100%;
+    height: 100%;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+
+<title>Sip N' Play- Menu</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="index.html"><img src="Logo.png"></a>
+        <a href="#" class="about_navButton">About</a>
+        <a href="visit.html" class="visit_navButton">Visit</a>
+        <a href="#" class="boardgames_navButton">Our Boardgame Collection</a>
+        <a href="#" class= "menu_navButton">Menu</a>
+        <a href="#" class ="reviews_navButton">Reviews</a>
+        <button class="reserve_navButton">Reserve Now!</button>
+      </div>
+
+
+
+    <div class="menu_container">
+        <h1 class="menu_container_item">Menu</h1>
+
+        <div class="menu_container_item">
+        <!--THREE.JS IMAGE TATER TOTS-->
+            <script src= "https://cdnjs.cloudflare.com/ajax/libs/three.js/104/three.js"></script>
+        </div>
+
+        <script src="script.js"></script>
+
+    </div>
+
+    <!--MENU TABS-->
+
+    <div class="tabs">
+        <div class="tab" onclick="showContent(1)">Coffee ☕️</div>
+        <div class="tab" onclick="showContent(2)">Specialty Drinks 🍶</div>
+        <div class="tab" onclick="showContent(3)">Boba 🍵</div>
+        <div class="tab" onclick="showContent(4)">Hot Bites 🥟</div>
+        <div class="tab" onclick="showContent(5)">Sandwiches & Salads 🥗</div>
+        <div class="tab" onclick="showContent(6)">Seasonal Menu 🎃</div>
+        <div class="tab" onclick="showContent(7)">Beer / Wine 🍻</div>
+      </div>
+      
+
+
+
+
+<!--COFFEE-->
+
+      <div class="content" id="content-1">
+        <h2>Coffee</h2>
+
+        <ul>
+            <li>LATTE $4.75(H)/$5.25(C) </li>
+            <li>CORTADO $4.25(H)/$4.75(C)</li>
+            <li>​DRIP COFFEE
+                Small: $3(H)/$3.50(C)
+                Medium: $3.50(H)
+                Large: $4(H)/$4.25(C)</li>
+            <li>CAFE AU LAIT $3.25(H)</li>
+            <li>CAPPUCINO $4.50(H)</li>
+            <li>MOCHA $5.75(H)/$6.25(C)</li>
+            <li>RED EYE $4.50(H)/$4.75(C)</li>
+            <li>AMERICANO $3.75(H)/$4.25(C)</li>
+        </ul>
+
+        </p>
+        <div id="canvas-container-1"></div>
+      </div>
+      
+
+
+
+
+
+<!--SPECIALTY DRINKS-->
+
+      <div class="content" id="content-2" style="display:none;">
+        <h2>Specialty Drinks</h2>
+
+        <ul>
+            <li>MATCHA LATTE - $5.25(H)/$5.75(C)</li>
+            <li>HOT CHOCOLATE - $4.50(H)</li>
+            <li>S'mores- $5.50</li>
+            <li>NUTELLA LATTE- $5.75(H)/$6.25(C)</li>
+            <li>CHAI- $5.00(H)/$5.50(C)</li>
+            <li>DIRTY CHAI- $6.25(H)/$6.75(C)</li>
+            <li>LAVENDAR LATTE- $5.75(H)/$6.25(C)</li>
+            <li>ROSE LATTE- $5.75(H)/$6.25(C)</li>
+            <li>BROWN SUGAR LATTE- $5.75(H)/$6.25(C)</li>
+            <li>BUMBLEBEE LATTE- $6.25(H)/$6.75(C)</li>
+        </ul>
+        
+​
+
+        <p>This is the content that will be displayed when Tab 2 is active.</p>
+        <div id="canvas-container-2"></div>
+      </div>
+      
+
+
+
+
+
+
+
+
+<!--BOBA-->
+
+      <div class="content" id="content-3" style="display:none;">
+        <h2>Boba</h2>
+
+        <h3>THE OG</h3>
+        <ul>
+            <li>Medium: $4.25</li>
+            <li>Large: $5.25</li>
+            <li>Hot: $5.25</li>
+        </ul>
+        <p><em>Classic milk tea</em></p>
+
+        <h3>BROWN SUGAR BOBA</h3>
+        <ul>
+            <li>Medium: $4.75</li>
+            <li>Large: $5.75</li>
+            <li>Hot: $5.75</li>
+        </ul>
+        <p><em>Caffeine free</em></p>
+
+        <h3>TARO BOBA COCONUT BOBA</h3>
+        <ul>
+            <li>Medium: $4.25</li>
+            <li>Large: $5.25</li>
+            <li>Hot: $5.25</li>
+        </ul>
+        <p><em>Caffeine free, dairy free</em></p>
+
+        <h3>FRUIT GREEN/BLACK TEA</h3>
+        <ul>
+            <li>Medium: $4.25</li>
+            <li>Large: $5.25</li>
+        </ul>
+        <p><em>Comes in a variety of flavors: 
+            mango / strawberry / passionfruit /
+            peach / green apple / lychee / kiwi <br>
+            Feel free to mix and match!</em></p>
+​
+        <h3>FRUIT BLACK TEA</h3>
+        <ul>
+            <li>Medium: $4.25</li>
+            <li>Large: $5.25</li>
+        </ul>
+        <p><em>Comes in a variety of flavors: peach/strawberry
+            Feel free to mix and match!</em></p>
+
+
+        <h3>JASMINE MILK TEA WINTERMELON MILK TEA</h3>
+        <ul>
+            <li>Medium: $4.25</li>
+            <li>Large: $5.25</li>
+            <li>Hot: $5.25</li>
+        </ul>
+        <p><em>Dairy free</em></p>
+
+
+        <br>
+
+        <p><em>TOPPINGS +$0.50 <br>
+            Tapioca pearls, lychee jelly, mixed jelly, grass jelly, pop strawberry, pop passionfruit, mango stars</em></p>
+
+            <div id="canvas-container-3"></div>
+      </div>
+
+       
+
+
+
+
+
+
+<!--HOT BITES-->
+      
+      <div class="content" id="content-4" style="display:none;">
+
+        <h2>Hot Bites</h2>
+    
+
+        <strong>CHICKEN POPPERS</strong><br>
+        <p>$6.00</p><br>
+        ​
+        <strong>MOZZ STICKS</strong><br>
+        <p>$7.00</p><br>
+        ​
+        <strong>PIGS IN A BLANKET</strong><br>
+        <p>$7.00</p><br>
+        ​
+        <strong>TATER TOTS</strong><br>
+        <p>$5.00</p><br>
+
+        <strong>CHICKEN TENDERS</strong><br>
+        <p>$8.00</p><br>
+        ​
+        <strong>ONION RINGS</strong><br>
+        <p>$5.00</p><br>
+        ​
+        <strong>FRIES</strong><br>
+        <p>$5.00</p><br>
+        ​
+        <strong>SWEET POTATO FRIES</strong><br>
+        <p>$6.00</p><br>
+
+        <div id="canvas-container-4"></div>
+
+        </div>
+
+
+
+
+
+
+
+<!--SANDWICHES AND SALADS-->
+      
+      <div class="content" id="content-5" style="display:none;">
+        <h2>Sandwiches and Salads</h2>
+
+        <strong>BEYOND BUSSIN SANDWICH</strong>
+        <p>$15.00</p>
+        
+        ​
+        <strong>SPICY CHICKEN SANDWICH</strong>
+        <p>$13.00</p>
+        Spicy mayo, grilled chicken, crispy bacon and avocado on Italian herb focaccia
+        Comes with chips
+        ​
+        ITALIAN PANINI
+        $11.00
+        Prosciutto, pesto, and mozzarella in between herb focaccia and pressed til golden brown and crispy (pesto contains pine nuts)​
+        Comes with chips
+        ​
+        TUNA MELT
+        $11.00
+        ​House-made tuna salad with American cheese on Italian herb focaccia pressed to perfection (can be spicy on request)
+        Comes with chips
+        ​
+        ZESTO CHICKEN SANDWICH
+        $13.00
+        Basil pesto, grilled chicken, fresh mozzarella and lemon zest on Italian herb focaccia (pesto contains pine nuts)
+        Comes with chips
+        ​
+        TURKEY CLUB
+        $11.00
+        Roast turkey, lettuce, tomato, crispy bacon and American cheese on sourdough
+        Comes with chips
+        ​
+        GRILLED CHEESE
+        $6.50
+        ​Comes with chips
+        +bacon/tomato/turkey: $1.50
+        MIXED GREEN SALAD
+        $6.50
+        w/tomato, vegan
+        +smoked salmon: $5.00
+        +boiled egg: $1.00
+        +avocado: $1.50
+        ​
+        COBB SALAD
+        $10.00
+        Romaine lettuce, bacon, egg, chicken, tomato, and avocado tossed with ranch
+        ​
+        ​
+        PIZZA PANINI
+        $11.00
+        Pepperoni, fresh mozzarella, marinara and olive oil on Italian herb focaccia and pressed to perfection!
+        Comes with chips
+        ​
+        SMOKED SALMON TARTINE
+        $11.00
+        Lemon zest infused cream cheese on toasted heritage wheat. Piled high with smoked salmon and topped with pickled red onion 
+        Comes with a side salad
+        ​
+        AVOCADO TOAST
+        $10.00
+        Avocado mashed with salt, pepper, lemon juice and olive oil on toasted heritage wheat
+        Comes with a side salad
+        +egg: $1
+        
+        <p>This is the content that will be displayed when Tab 5 is active.</p>
+
+        <div id="canvas-container-5"></div>
+      </div>
+      
+
+
+
+
+<!--SEASONAL MENU-->
+
+      <div class="content" id="content-6" style="display:none;">
+        <h2>Seasonal Menu</h2>
+        <p>This is the content that will be displayed when Tab 6 is active.</p>
+      </div>
+
+
+
+<!--BEER + WINE-->
+      
+      <div class="content" id="content-7" style="display:none;">
+        <h2>Beer / Wine</h2>
+        <p>This is the content that will be displayed when Tab 7 is active.</p>
+      </div>
+
+
+
+      <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/104/three.js"></script>-->
+      <script src="script.js"></script>
+
+
+    
+
+
+
+</body>
+</html>
