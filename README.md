@@ -52,7 +52,7 @@ I decided to do the 3D website track because I saw it as more aligned to my skil
 
 ---
 
-## Project Photos [Development]
+## Project Photos
 
 <p align="center">⬇️ **Vist Page** ⬇️</p>
 
