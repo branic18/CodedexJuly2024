@@ -13,7 +13,7 @@
 
 **Link your GitHub Repo**: You're here 🙌🌈✨
 
-**Link to the Live Demo**
+**Link to the Live Demo**: https://branic18.github.io/CodedexJuly2024/index.html
 
 **Which prize category I'm applying for** : Best Solo Hack 💪, Best UI/UX 🎨
 
